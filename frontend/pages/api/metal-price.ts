@@ -12,7 +12,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    const response = await fetch('https://591c-2401-4900-57a3-b6fb-69c5-cc00-b7cb-2af0.ngrok-free.app/api/price-data');
+    const response = await fetch('http://148.135.138.22:3232/api/price-data');
     
     if (!response.ok) {
       throw new Error('Failed to fetch price data');
